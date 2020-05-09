@@ -13,4 +13,4 @@ run:
 	  pimba/mopidy:$(VERSION) -o mpd/hostname=0.0.0.0 -o http/hostname=0.0.0.0
 
 push:
-	docker push docker.io/pimba/mopidy:$(VERSION)
+	docker push pimba/mopidy:$(VERSION)
