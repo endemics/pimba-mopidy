@@ -1,4 +1,5 @@
 VERSION=$(shell git rev-parse --short HEAD)
+.PHONY: build run push
 all: build run
 
 build:
