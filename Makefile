@@ -3,7 +3,7 @@ VERSION=$(shell git rev-parse --short HEAD)
 all: build run
 
 build:
-	docker build -t pimba/mopidy:$(VERSION) .
+	docker build --no-cache -t pimba/mopidy:$(VERSION) .
 
 run:
 	docker run -ti --rm \
